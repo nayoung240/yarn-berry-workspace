@@ -230,7 +230,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/json-schema@npm:^7.0.9":
+"@types/eslint@npm:^8.4.10":
+  version: 8.4.10
+  resolution: "@types/eslint@npm:8.4.10"
+  dependencies:
+    "@types/estree": "*"
+    "@types/json-schema": "*"
+  checksum: 21e009ed9ed9bc8920fdafc6e11ff321c4538b4cc18a56fdd59dc5184ea7bbf363c71638c9bdb59fc1254dddcdd567485136ed68b0ee4750948d4e32cb79c689
+  languageName: node
+  linkType: hard
+
+"@types/estree@npm:*":
+  version: 1.0.0
+  resolution: "@types/estree@npm:1.0.0"
+  checksum: 910d97fb7092c6738d30a7430ae4786a38542023c6302b95d46f49420b797f21619cdde11fa92b338366268795884111c2eb10356e4bd2c8ad5b92941e9e6443
+  languageName: node
+  linkType: hard
+
+"@types/json-schema@npm:*, @types/json-schema@npm:^7.0.9":
   version: 7.0.11
   resolution: "@types/json-schema@npm:7.0.11"
   checksum: 527bddfe62db9012fccd7627794bd4c71beb77601861055d87e3ee464f2217c85fca7a4b56ae677478367bbd248dbde13553312b7d4dbc702a2f2bbf60c4018d
@@ -251,6 +268,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^18.11.12":
+  version: 18.11.12
+  resolution: "@types/node@npm:18.11.12"
+  checksum: 6c67f0998a9ad8ef0f357fcc0d72841c579576c746cfbac67c9d0229e1cd219d3b96297c2caaeaa4084ba7e9ad112b412e64af4066e522faa0be4ef9ad0a613a
+  languageName: node
+  linkType: hard
+
+"@types/prettier@npm:^2.7.1":
+  version: 2.7.1
+  resolution: "@types/prettier@npm:2.7.1"
+  checksum: 5e3f58e229d6c73b5f5cae2e8f96c1c4a5b5805f83459e17a045ba8e96152b1d38e86b63e3172fb159dac923388699660862b75b2d37e54220805f0e691e26f1
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*":
   version: 15.7.5
   resolution: "@types/prop-types@npm:15.7.5"
@@ -258,7 +289,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.0.9":
+"@types/react-dom@npm:18.0.9, @types/react-dom@npm:^18.0.9":
   version: 18.0.9
   resolution: "@types/react-dom@npm:18.0.9"
   dependencies:
@@ -267,7 +298,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.0.26":
+"@types/react@npm:*, @types/react@npm:18.0.26, @types/react@npm:^18.0.26":
   version: 18.0.26
   resolution: "@types/react@npm:18.0.26"
   dependencies:
@@ -420,6 +451,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@wanted/ui@workspace:^, @wanted/ui@workspace:packages/ui":
+  version: 0.0.0-use.local
+  resolution: "@wanted/ui@workspace:packages/ui"
+  dependencies:
+    "@types/node": ^18.11.12
+    "@types/react": ^18.0.26
+    "@types/react-dom": ^18.0.9
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    typescript: ^4.9.4
+  languageName: unknown
+  linkType: soft
+
 "@wanted/web@workspace:apps/wanted":
   version: 0.0.0-use.local
   resolution: "@wanted/web@workspace:apps/wanted"
@@ -428,9 +472,11 @@ __metadata:
     "@types/react": 18.0.26
     "@types/react-dom": 18.0.9
     "@wanted/lib": "workspace:^"
+    "@wanted/ui": "workspace:^"
     eslint: 8.29.0
     eslint-config-next: 13.0.6
     next: 13.0.6
+    next-transpile-modules: ^10.0.0
     react: 18.2.0
     react-dom: 18.2.0
     typescript: 4.9.4
@@ -1884,6 +1930,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-transpile-modules@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "next-transpile-modules@npm:10.0.0"
+  dependencies:
+    enhanced-resolve: ^5.10.0
+  checksum: 3300fc7081f63b2c9487588db7cbe718f209dfd2111adec22d9c8af0e3c8ade2d95fd45f91e045546d78d98cafc78a49431de9a623360d33831b5e694bf007c9
+  languageName: node
+  linkType: hard
+
 "next@npm:13.0.6":
   version: 13.0.6
   resolution: "next@npm:13.0.6"
@@ -2190,7 +2245,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.2.0":
+"react-dom@npm:18.2.0, react-dom@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -2209,7 +2264,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0":
+"react@npm:18.2.0, react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
@@ -2337,6 +2392,13 @@ __metadata:
     get-intrinsic: ^1.1.3
     is-regex: ^1.1.4
   checksum: bc566d8beb8b43c01b94e67de3f070fd2781685e835959bbbaaec91cc53381145ca91f69bd837ce6ec244817afa0a5e974fc4e40a2957f0aca68ac3add1ddd34
+  languageName: node
+  linkType: hard
+
+"schedular@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "schedular@npm:0.0.1"
+  checksum: bd9cf8ac2f1501e3b76a449f388bfb898bd77ddfe24921b7d2451fc9bb3720b8f5051cb36ae6633fcf2dc5641e73710fad62e5584bcf7afa06639699f258f3d5
   languageName: node
   linkType: hard
 
@@ -2692,10 +2754,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yarn-berry-workspace@workspace:.":
+"yarn-berry-test@workspace:.":
   version: 0.0.0-use.local
-  resolution: "yarn-berry-workspace@workspace:."
+  resolution: "yarn-berry-test@workspace:."
   dependencies:
+    "@types/eslint": ^8.4.10
+    "@types/prettier": ^2.7.1
     "@typescript-eslint/eslint-plugin": ^5.46.0
     "@typescript-eslint/parser": ^5.46.0
     eslint: ^8.29.0
@@ -2705,6 +2769,7 @@ __metadata:
     eslint-plugin-react: ^7.31.11
     eslint-plugin-react-hooks: ^4.6.0
     prettier: ^2.8.1
+    schedular: ^0.0.1
     typescript: ^4.9.4
   languageName: unknown
   linkType: soft
